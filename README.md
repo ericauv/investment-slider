@@ -1,10 +1,17 @@
 # Investment Sliders
+
 This project is an attempt to mimic + improve the slider component(s) that Homevest currently has in [production](https://homevest.co/homes/St-Louis-MO/5033-Ulena-Avenue-63116/q2GTETisd65WqvfK8BCd7).
 
 ## Comparison
+
 Below is a comparison of the sliders in production vs. the sliders in this repo.
 
+### Original Sliders in production
+
 ![Production Sliders](https://media.giphy.com/media/WUZzuoD72xl8yG7smn/giphy.gif)
+
+### Improved Sliders
+
 ![Improved Sliders](https://media.giphy.com/media/ic0Y0JvF8WhqrXqUPA/giphy.gif)
 
 ## Changes
