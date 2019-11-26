@@ -14,13 +14,13 @@ const SliderInput = styled.input.attrs(props=>({
   },
 }))`
 margin-bottom:20px;
-  -webkit-appearance: none;
-  width: 100%;
-  height: 15px;
-  border-radius: 5px;
-  outline: none;
-  cursor: ${props=>props.grabbing ? 'grabbing' : 'grab'};
-
+margin-right:20px;
+-webkit-appearance: none;
+width: 95%;
+height: 15px;
+border-radius: 5px;
+outline: none;
+cursor: ${props=>props.grabbing ? 'grabbing' : 'grab'};
 
 &::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -58,6 +58,7 @@ const AmountStyle = styled.p`
 
 const Slider = ({name, title, value, handleSliderChange, unit='currency', min=0, max=100, step=1, strikeThroughText=''}) => {
   // used for changing cursor type
+
   const [grabbing, setGrabbing] = useState(false);
 
     if(!value){ // initialize value to be minimum if no value passed
@@ -71,11 +72,11 @@ const Slider = ({name, title, value, handleSliderChange, unit='currency', min=0,
 
     return (
       <>
-        <div style={{marginLeft:'20px'}} className='slider-section' onMouseDown={()=>setGrabbing(true)} onMouseUp={()=>setGrabbing(false)}>
+        <div style={{marginLeft:'20px'}} className='slider-section' onMouseDownCapture={()=>setGrabbing(true)} onMouseUp={()=>setGrabbing(false)}>
             <SliderLabel labelText={title} strikeThroughText={strikeThroughText} value={value} unit={unit} forInput={name} ></SliderLabel>
             <SliderContainer>
               <AmountStyle className='slider-amount'>{getDisplayAmount(value, unit)}</AmountStyle>
-              <SliderInput tabIndex='0' className='slider-input' id={name} fillPercent={fillPercent}  grabbing={grabbing} title={title} aria-label={`${title} slider`} name={name} type='range' min={min} max={max} step={step} value={value} onChange={(e)=>{
+              <SliderInput tabIndex='0' className='slider-input' id={name} fillPercent={fillPercent} grabbing={grabbing} title={title} aria-label={`${title} slider`} name={name} type='range' min={min} max={max} step={step} value={value} onChange={(e)=>{
                 const {name, value} = e.currentTarget;
                 handleSliderChange(name, value);
               }} />
