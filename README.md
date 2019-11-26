@@ -19,6 +19,14 @@ Below is a comparison of the sliders in production vs. the sliders in this repo.
 - Add debounce to onChange handler for a smoother UI
 - Use semantic HTML for inputs for better accessibility across browsers (vs. using div with roles)
 
+## Future Improvements
+
+Some further improvements can be made to the sliders in general and to match more closely with the original sliders :
+
+- Match font size + colors for labels and copy
+- Add media queries for screen-width for responsiveness
+- Match slider bar size
+
 ## Installation
 
 In the project directory, install packages using
