@@ -28,6 +28,7 @@ Some further improvements can be made to the sliders in general and to match mor
 - Match slider bar size
 - Match slider thumb outline width
 - Add more complete test coverage, only a few tests have been written
+- Improve 'grab' vs. 'grabbing' cursor behaviour
 
 ## Installation
 
