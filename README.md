@@ -16,8 +16,8 @@ Below is a comparison of the sliders in production vs. the sliders in this repo.
 
 ## Changes
 
-- Add debounce to onChange handler for a smoother UI
-- Use semantic HTML for inputs for better accessibility across browsers (vs. using div with roles)
+- Added debounce to onChange handler for a smoother UI
+- Used semantic HTML for inputs for better accessibility across browsers (vs. using divs with roles)
 
 ## Future Improvements
 
