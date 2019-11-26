@@ -26,6 +26,7 @@ Some further improvements can be made to the sliders in general and to match mor
 - Match font size + colors for labels and copy
 - Add media queries for screen-width for responsiveness
 - Match slider bar size
+- Match slider thumb outline width
 - Add more complete test coverage, only a few tests have been written
 
 ## Installation
